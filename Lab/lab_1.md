@@ -6,7 +6,7 @@
 
 <p> Submission link : https://codeforces.com/submissions/Yousuf2723 </p>
 
-## *Number of problem solved: 2*
+## *Number of problem solved: 2 (Using OOP)*
 ## *From 20 to 27 May 2025*
 
 

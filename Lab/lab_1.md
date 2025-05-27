@@ -4,9 +4,7 @@
 
 ![Image](https://github.com/user-attachments/assets/2bf72086-e5f6-4883-b041-d0e6cbe58700)
 
-<p>
-  Submission link : <a herf = "https://codeforces.com/submissions/Yousuf2723" > Click here </a>
-</p>
+<p> Submission link : https://codeforces.com/submissions/Yousuf2723 </p>
 
 ## *Number of Solves: 2*
 ## *From 20 to 27 May 2025*

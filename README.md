@@ -51,5 +51,6 @@ _**Heaven’s Light is Our Guide**_
 | Lab No. | Title | Link | CodeForces |
 | :---: | :---: | :---: | :---: |
 | 01 | All the programming problems from first lab | [Lab 01](https://github.com/Yousuf2206/ECE-1204_2310023/blob/main/Lab/lab_1.md) | 2 |
+| 02 | All the programming problems from second lab | [Lab 02](https://github.com/Yousuf2206/ECE-1204_2310023/blob/main/Lab/lab_2.md) | 0 |
 </div>
 

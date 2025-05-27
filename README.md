@@ -1,1 +1,55 @@
-# ECE-1204_2310023
+## ECE-1104_2310023_Lab
+<div align="center">
+  
+_**Heaven’s Light is Our Guide**_
+</div>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/18531be8-2a84-4bea-9027-5f1c40549dfa" alt="RUET Logo" style="width:150px;height:170px;">
+</p>
+
+<div align="center">
+  
+  ## **Rajshahi University of Engineering and Technology** <br> 
+  ### **Department of Electrical & Computer Engineering**
+  ### **Lab**<br>
+  **Course Name:** object oriented programming Sessional<br>
+  **Course Code:** ECE 1204
+</div>
+<br>
+<div align="center">
+
+---  
+##  Submitted to: 
+
+### **HAFSA BINTE KIBRIA**
+#### Assistant Professor
+#### Department of Electrical and Computer Engineering
+#### Rajshahi University of Engineering and Technology
+#### Rajshahi - 6204
+
+---
+
+## Submitted by:
+
+### **MD. Yousuf**
+#### Roll No: 2310023
+#### Codeforces Profile
+#### Link: https://codeforces.com/profile/Yousuf2723
+#### Registation No: 1076 / 2023-2024
+#### Department of Electrical and Computer Engineering
+#### Rajshahi University of Engineering and Technology
+#### Rajshahi - 6204
+
+---
+</div>
+
+<div align="center">
+  
+## INDEX:
+
+| Lab No. | Title | Link | CodeForces |
+| :---: | :---: | :---: | :---: |
+| 01 | All the programming problems from first lab | [Lab 01]() | 2 |
+</div>
+

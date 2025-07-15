@@ -246,3 +246,315 @@ int main() {
 <img width="863" height="301" alt="Image" src="https://github.com/user-attachments/assets/c61d4d00-6317-4d29-905a-a8ae1aa54e4d" />
 
 </p>
+
+## **Experiment No : 06**
+## **Submission Date : 21 July, 2025**
+
+## **Code 06:**
+```C++
+#include <iostream>
+using namespace std;
+
+// Function that takes an integer by reference and increments it
+void increment(int &num) {
+    num += 1;
+}
+
+int main() {
+    int value = 10;
+
+    cout << "Before increment: " << value << endl;
+
+    // Call the function
+    increment(value);
+
+    cout << "After increment: " << value << endl;
+
+    return 0;
+}
+
+```
+
+## **Output 01:** 
+<p align="center">
+<img width="760" height="275" alt="Image" src="https://github.com/user-attachments/assets/054de820-e0b1-4602-b833-c867e6abfc13" />
+
+</p>
+
+## **Experiment No : 07**
+## **Submission Date : 21 July, 2025**
+
+## **Code 07:**
+```C++
+#include <iostream>
+using namespace std;
+
+class Account {
+public:
+    double balance;
+
+    // Constructor to initialize balance
+    Account(double initialBalance) {
+        balance = initialBalance;
+    }
+
+    // Function to display current balance
+    void showBalance() {
+        cout << "Current Balance: " << balance << endl;
+    }
+};
+
+// Function that adds money to the account balance (passed by reference)
+void addMoney(Account &acc, double amount) {
+    acc.balance += amount;
+}
+
+int main() {
+    Account myAccount(1000.0); // Initial balance is 1000
+
+    cout << "Before adding money: ";
+    myAccount.showBalance();
+
+    // Add money using function
+    addMoney(myAccount, 500.0);
+
+    cout << "After adding money: ";
+    myAccount.showBalance();
+
+    return 0;
+}
+
+```
+
+## **Output 01:** 
+<p align="center">
+<img width="755" height="275" alt="Image" src="https://github.com/user-attachments/assets/a7a0d939-ea63-48d1-977b-e5d10a4d2bc4" />
+
+</p>
+
+## **Experiment No : 08**
+## **Submission Date : 21 July, 2025**
+
+## **Code 08:**
+```C++
+#include <iostream>
+using namespace std;
+
+class Sample {
+private:
+    int arr[5]; // fixed-size array
+
+public:
+    // Constructor to initialize array elements
+    Sample() {
+        for (int i = 0; i < 5; i++)
+            arr[i] = i * 10; // Just some default values
+    }
+
+    // Member function that returns reference to an element
+    int& elementAt(int index) {
+        return arr[index];
+    }
+
+    // Function to display all elements
+    void display() {
+        for (int i = 0; i < 5; i++)
+            cout << arr[i] << " ";
+        cout << endl;
+    }
+};
+
+int main() {
+    Sample s;
+
+    cout << "Original array: ";
+    s.display();
+
+    // Modify the 3rd element (index 2) directly
+    s.elementAt(2) = 99;
+
+    cout << "After modification: ";
+    s.display();
+
+    return 0;
+}
+
+```
+
+## **Output 01:** 
+<p align="center">
+<img width="769" height="282" alt="Image" src="https://github.com/user-attachments/assets/4b43a26e-69e6-493d-9521-e5d7ec4b7c4a" />
+
+</p>
+
+## **Experiment No : 09**
+## **Submission Date : 21 July, 2025**
+
+## **Code 09:**
+```C++
+#include <iostream>
+using namespace std;
+
+// Function to swap two integers by reference
+void swapValues(int &a, int &b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+// Function to sort three integers in descending order
+void sortDescending(int &x, int &y, int &z) {
+    if (x < y)
+        swapValues(x, y);
+    if (x < z)
+        swapValues(x, z);
+    if (y < z)
+        swapValues(y, z);
+}
+
+int main() {
+    int a = 25, b = 10, c = 40;
+
+    cout << "Before sorting: " << a << " " << b << " " << c << endl;
+
+    sortDescending(a, b, c);
+
+    cout << "After sorting (descending): " << a << " " << b << " " << c << endl;
+
+    return 0;
+}
+
+```
+
+## **Output 01:** 
+<p align="center">
+<img width="739" height="248" alt="Image" src="https://github.com/user-attachments/assets/2dd4ffc1-13e2-4c55-816c-05d0684a5324" />
+
+</p>
+
+## **Experiment No : 10**
+## **Submission Date : 21 July, 2025**
+
+## **Code 10:**
+```C++
+#include <iostream>
+using namespace std;
+
+class BankAccount {
+public:
+    int accountNumber;
+    float balance;
+
+    // Constructor to initialize account
+    BankAccount(int accNo, float initialBalance) {
+        accountNumber = accNo;
+        balance = initialBalance;
+    }
+
+    // Display account info
+    void showInfo() {
+        cout << "Account " << accountNumber << " | Balance: " << balance << endl;
+    }
+};
+
+// Function to transfer money between accounts using reference
+void transfer(BankAccount &from, BankAccount &to, float amount) {
+    if (from.balance >= amount) {
+        from.balance -= amount;
+        to.balance += amount;
+        cout << "Transfer successful: " << amount << " transferred from Account " 
+             << from.accountNumber << " to Account " << to.accountNumber << endl;
+    } else {
+        cout << "Transfer failed: Insufficient balance in Account " << from.accountNumber << endl;
+    }
+}
+
+int main() {
+    BankAccount acc1(1001, 5000.0f);
+    BankAccount acc2(1002, 2000.0f);
+
+    cout << "Before Transfer:\n";
+    acc1.showInfo();
+    acc2.showInfo();
+
+    transfer(acc1, acc2, 1500.0f); // Successful transfer
+
+    cout << "\nAfter Transfer:\n";
+    acc1.showInfo();
+    acc2.showInfo();
+
+    transfer(acc1, acc2, 4000.0f); // Failed transfer
+
+    return 0;
+}
+
+```
+## **Output 01:** 
+<p align="center">
+<img width="1179" height="541" alt="Image" src="https://github.com/user-attachments/assets/ac6b0bf6-0603-46b9-965a-722d455ab840" />
+
+</p>
+
+## **Experiment No : 11**
+## **Submission Date : 21 July, 2025**
+
+## **Code 11:**
+```C++
+#include <iostream>
+using namespace std;
+
+class Inventory {
+private:
+    int quantities[10];
+
+public:
+    // Constructor to initialize all quantities to 0
+    Inventory() {
+        for (int i = 0; i < 10; i++)
+            quantities[i] = 0;
+    }
+
+    // Overload [] operator to return reference
+    int& operator[](int index) {
+        if (index < 0 || index >= 10) {
+            cout << "Index out of bounds!" << endl;
+            // Returning first element to avoid compiler error (better to throw exception in real code)
+            return quantities[0];
+        }
+        return quantities[index];
+    }
+
+    // Display all item quantities
+    void display() {
+        for (int i = 0; i < 10; i++) {
+            cout << "Item " << i << ": " << quantities[i] << endl;
+        }
+    }
+};
+
+int main() {
+    Inventory store;
+
+    // Modify item quantities directly using []
+    store[2] = 50;
+    store[5] = 30;
+    store[9] = 75;
+
+    // Access item quantities directly using []
+    cout << "Item 2 quantity: " << store[2] << endl;
+    cout << "Item 5 quantity: " << store[5] << endl;
+    cout << "Item 9 quantity: " << store[9] << endl;
+
+    cout << "\nAll Inventory Items:\n";
+    store.display();
+
+    return 0;
+}
+
+
+```
+## **Output 01:** 
+<p align="center">
+<img width="1023" height="741" alt="Image" src="https://github.com/user-attachments/assets/19a34215-5af7-4410-ba41-515579d62e47" />
+
+</p>

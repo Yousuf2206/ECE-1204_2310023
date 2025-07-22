@@ -331,7 +331,5 @@ int main() {
 <img width="755" height="275" alt="Image" src="https://github.com/user-attachments/assets/a7a0d939-ea63-48d1-977b-e5d10a4d2bc4" />
 
 </p>
-## **Output 01:** 
-<p align="center">
-<img width="1023" height="741" alt="Image" src="https://github.com/user-attachments/assets/19a34215-5af7-4410-ba41-515579d62e47" />
+
 

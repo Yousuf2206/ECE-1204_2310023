@@ -57,5 +57,6 @@ _**Heaven’s Light is Our Guide**_
 | 05 | All the programming problems from Fifth lab | [Lab 05](https://github.com/Yousuf2206/ECE-1204_2310023/blob/main/Lab/lab_5.md) | 3 |
 | 06 | All the programming problems from sixth lab | [Lab 06](https://github.com/Yousuf2206/ECE-1204_2310023/blob/main/Lab/lab_6.md) | 3 |
 | 07 | All the programming problems from seventh lab | [Lab 07](https://github.com/Yousuf2206/ECE-1204_2310023/blob/main/Lab/lab_7.md) | 3 |
+| 08 | All the programming problems from eight lab | [Lab 08](https://github.com/Yousuf2206/ECE-1204_2310023/blob/main/Lab/lab_8.md) | 3 |
 </div>
 

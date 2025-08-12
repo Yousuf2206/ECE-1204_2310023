@@ -192,7 +192,7 @@ int main()
 
 ## **Output 01:** 
 <p align="center">
-<img width="378" height="576" alt="Image" src="https://github.com/user-attachments/assets/de0293d8-014a-4ac7-b4d9-bbb4bd1fb9fa" />
+<img width="829" height="717" alt="Image" src="https://github.com/user-attachments/assets/6f6f0263-e48b-4243-81ff-e1d8868c1137" />
 </p>
 
 ## **Experiment No: 02**
@@ -393,7 +393,7 @@ int main()
 
 ## **Output 02:** 
 <p align="center">
-<img width="378" height="576" alt="Image" src="https://github.com/user-attachments/assets/cbe4ebc7-27ce-4e31-b78e-12bc9264ef0b" />
+<img width="845" height="838" alt="Image" src="https://github.com/user-attachments/assets/1ac8b737-3a98-4ce7-a8eb-88645fe17ced" />
 
 </p>
 
@@ -448,7 +448,7 @@ int main()
 
 ## **Output 03:** 
 <p align="center">
-<img width="378" height="289" alt="Image" src="https://github.com/user-attachments/assets/2fc23f2e-85da-4af3-b1ea-7dbaf001981e" />
+<img width="845" height="414" alt="Image" src="https://github.com/user-attachments/assets/a97148a4-831d-4d0c-b2c6-6fa2bec02503" />
 
 </p>
 
@@ -587,5 +587,5 @@ int main()
 
 ## **Output 04:** 
 <p align="center">
-<img width="644" height="628" alt="Image" src="https://github.com/user-attachments/assets/2b1fe7c7-9d4e-47fa-b810-e5a43824c21d" />
+<img width="855" height="1151" alt="Image" src="https://github.com/user-attachments/assets/a496f3f1-fb14-400f-ad35-fa9c4e9a2ead" />
 </p>

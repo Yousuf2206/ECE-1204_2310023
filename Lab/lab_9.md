@@ -459,133 +459,47 @@ int main()
 ## **Code 04:**
 ```C++
 #include <iostream>
+#include <iostream>
 using namespace std;
 
-class Score
-{
-    int points;
-
+class Counter {
+    int value;
 public:
-    Score(int p = 0)
-    {
-        points = p;
-    }
-
-    // Unary operators
-    Score operator++()
-    {
-        points++;
-        return *this;
-    } // correct answer
-    Score operator--()
-    {
-        points--;
-        return *this;
-    } // wrong answer
-
-    // Binary + (add one score to another)
-    Score operator+(Score &other)
-    {
-        points = points + other.points;
+    Counter(int v) : value(v) {}
+    Counter& increment() {
+        value++;
         return *this;
     }
-
-    // Comparisons
-    bool operator>(Score &other)
-    {
-        if (points > other.points)
-            return true;
-        else
-            return false;
-    }
-    bool operator<(Score &other)
-    {
-        if (points < other.points)
-            return true;
-        else
-            return false;
-    }
-
-    // Display score
-    void display()
-    {
-        cout << points;
-    }
-
-    // Get score value
-    int getPoints()
-    {
-        return points;
+    void print() {
+        cout << value << endl;
     }
 };
 
-int main()
-{
-    Score player1(0), player2(0);
-
-    // Questions & answers
-    string questions[5] = {
-        "Is RUET in Rajshahi? (yes (1) / no (0)): ",
-        "Is 2 + 2 equal to 5? (yes (1) / no (0)): ",
-        "Are you Human? (yes (1) / no (0)): ",
-        "Is the Sun a planet? (yes (1) / no (0)): ",
-        "Do humans need oxygen to survive? (yes (1) / no (0)): "};
-    string correctAnswers[5] = {"1", "0", "1", "0", "1"};
-
-    cout << "Welcome to the Quiz Game!\n";
-    cout << "Answer 5 questions each (yes/no). Correct = +1, Wrong = -1.\n\n";
-
-    // Player 1 answers
-    cout << "Player 1's turn:\n";
-    for (int i = 0; i < 5; i++)
-    {
-        string ans;
-        cout << "Q" << i + 1 << ": " << questions[i];
-        cin >> ans;
-        if (ans == correctAnswers[i])
-            ++player1;
-        else
-            --player1;
-    }
-
-    // Player 2 answers
-    cout << "\nPlayer 2's turn:\n";
-    for (int i = 0; i < 5; i++)
-    {
-        string ans;
-        cout << "Q" << i + 1 << ": " << questions[i];
-        cin >> ans;
-        if (ans == correctAnswers[i])
-            ++player2;
-        else
-            --player2;
-    }
-
-    // Show final scores
-    cout << "\nFinal Scores:\n";
-    cout << "Player 1: ";
-    player1.display();
-    cout << endl;
-    cout << "Player 2: ";
-    player2.display();
-    cout << endl;
-
-    // Announce winner
-    if (player1 > player2)
-        cout << "\nWinner: Player 1 \n";
-    else if (player1 < player2)
-        cout << "\nWinner: Player 2 \n";
-    else
-        cout << "\nIt's a tie!\n";
-
-    return 0;
+void modifyByRef(int& x) {
+    x += 10;
 }
 
+void modifyByVal(int x) {
+    x += 10;
+}
 
+int main() {
+    Counter c(5);
+    c.increment().increment().print();
+
+    int a = 5;
+    modifyByRef(a);
+    cout << a << endl;
+
+    int b = 5;
+    modifyByVal(b);
+    cout << b << endl;
+}
 
 ```
 
 ## **Output 04:** 
 <p align="center">
-<img width="855" height="1151" alt="Image" src="https://github.com/user-attachments/assets/a496f3f1-fb14-400f-ad35-fa9c4e9a2ead" />
+<img width="823" height="304" alt="image" src="https://github.com/user-attachments/assets/8f37528e-1334-4aae-b4e3-410fb13489a9" />
+
 </p>

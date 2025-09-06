@@ -35,7 +35,7 @@ _**Heaven’s Light is Our Guide**_
 ### **MD. Yousuf**
 #### Roll No: 2310023
 #### Codeforces Profile
-#### Link: https://codeforces.com/submissions/Yousuf2723
+#### Link: https://codeforces.com/profile/Yousuf2723
 #### Registation No: 1076 / 2023-2024
 #### Department of Electrical and Computer Engineering
 #### Rajshahi University of Engineering and Technology
